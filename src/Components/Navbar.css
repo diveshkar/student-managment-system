@@ -1,0 +1,15 @@
+.x {
+    
+    position: fixed;
+    margin: auto;
+    top: 0px;
+    right: 0px;
+    width: 300px;
+    padding: 10px;
+    font-weight: bold;
+    font-size: large;
+        
+}
+h1 {
+    font-size: 80px;
+};

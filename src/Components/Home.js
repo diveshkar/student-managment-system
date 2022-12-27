@@ -1,22 +1,18 @@
 import React, { Component } from 'react';
-import { Button, Space } from 'antd';
+import Navbar from './Navbar';
 
 
 class Home extends Component {
    
-
-    onredirect = () => {
-        window.location.replace("/log");
-        }
     render() {
     return (
         <div>
-        <Space wrap>
-            <Button onClick={this.onredirect} type="primary" danger>
-            Login
-            </Button>
-        </Space>
+        <Navbar></Navbar>
+        <h1>HI THERE! WELCOME TO SMS</h1>
         </div>
+        
+        
+            
     );
 }
 }
