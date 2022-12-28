@@ -1,4 +1,4 @@
-import { Button, Checkbox, Form, Input } from 'antd';
+import { Button, Checkbox, Form, Input,Select } from 'antd';
 import React, { Component } from 'react';
 
 
@@ -10,7 +10,7 @@ class Login extends Component {
     console.log('Failed:', errorInfo);
   };
    myStyle= {
-    position: "fixed",
+    position: "center",
     top: "300px",
     right: "420px",
     width: "300px",
@@ -20,7 +20,7 @@ class Login extends Component {
 render() { 
         return (
           <Form style={this.myStyle}
-            name="basic"
+            name="Login"
             labelCol={{
               span: 8,
             }}
@@ -34,6 +34,20 @@ render() {
             onFinishFailed={this.onFinishFailed}
             autoComplete="off"
           >
+            <Form.Item label="Job Role"
+                        name="Job Role"
+                        rules={[
+                          {
+                            required: true,
+                            message: 'Please select your Job Role',
+                          },
+                          
+                          ]}>
+                            <Select>
+                              <Select.Option value="Student">Student</Select.Option>
+                              <Select.Option value="Teacher">Teacher</Select.Option>
+                            </Select>
+                          </Form.Item>
             <Form.Item
               label="NIC"
               name="NIC"
@@ -60,7 +74,6 @@ render() {
             >
               <Input.Password />
             </Form.Item>
-      
             <Form.Item
               name="remember"
               valuePropName="checked"

@@ -4,6 +4,7 @@ import Login from './Components/Login';
 import Home from './Components/Home';
 import { Route, Routes } from 'react-router-dom';
 import Navbar1 from './Components/Navbar1';
+import SignUp from './Components/SignUp';
 
 
 class App extends Component {
@@ -14,6 +15,7 @@ class App extends Component {
       <Routes>
       <Route path="/" element={ <Home/>} />
       <Route path="log" element={ <Login/>} />
+      <Route path="/SignUp" element={ <SignUp />} />
       </Routes>
       
       
