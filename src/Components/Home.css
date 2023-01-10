@@ -1,0 +1,12 @@
+body {
+    align-items: center;
+    background-color: var(--white);
+    background: url(""); 
+    background-attachment: center;
+    background-position: relative;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: grid;
+    height: 100vh;
+    place-items: center;
+  }
